@@ -16,6 +16,9 @@ libraryDependencies += "com.h2database" % "h2" % "1.4.196"
 libraryDependencies ++= dependencies
 
 val dependencies = Seq(
+  filters,
+  "com.typesafe.play"             %% "play-slick"                          % "3.0.3",
+  "com.typesafe.slick"            %% "slick-codegen"                       % "3.2.2",
   "org.scalaz"    %% "scalaz-core" % "7.2.12",
   "org.scala-lang"                 %  "scala-reflect"                      % "2.11.12",
   "org.apache.httpcomponents"      % "httpclient"                          % "4.3.4",
@@ -27,5 +30,5 @@ val dependencies = Seq(
   "com.ibm.icu"                      % "icu4j"             % "58.2",
   "org.scalaz"                    %% "scalaz-scalacheck-binding"           % "7.2.12"                % "test",
   "com.h2database"                 % "h2"                                  % "1.4.178"               % "test",
-  "mysql"                          % "mysql-connector-java"                % "5.1.36",
+  "mysql"                          % "mysql-connector-java"                % "5.1.38",
 )
