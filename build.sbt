@@ -19,6 +19,7 @@ val dependencies = Seq(
   filters,
   "com.typesafe.play"             %% "play-slick"                          % "3.0.3",
   "com.typesafe.slick"            %% "slick-codegen"                       % "3.2.2",
+  "com.typesafe.slick"            %% "slick-hikaricp"                      % "3.2.1",
   "org.scalaz"    %% "scalaz-core" % "7.2.12",
   "org.scala-lang"                 %  "scala-reflect"                      % "2.11.12",
   "org.apache.httpcomponents"      % "httpclient"                          % "4.3.4",
@@ -32,3 +33,4 @@ val dependencies = Seq(
   "com.h2database"                 % "h2"                                  % "1.4.178"               % "test",
   "mysql"                          % "mysql-connector-java"                % "5.1.38",
 )
+
