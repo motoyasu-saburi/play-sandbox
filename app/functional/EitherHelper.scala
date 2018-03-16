@@ -1,0 +1,5 @@
+package functional
+
+class EitherHelper {
+
+}
