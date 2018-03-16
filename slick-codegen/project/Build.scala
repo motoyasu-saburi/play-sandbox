@@ -18,10 +18,10 @@ object myBuild extends Build {
     )
   )
 
-  lazy val slick = TaskKey[Seq[File]]("gen-tables")
+  lazy val slick = TaskKey[Seq[File]]("slick-codegen")
   lazy val slickCodeGenTask = (sourceManaged, dependencyClasspath in Compile, runner in Compile, streams) map { (dir, cp, r, s) =>
     val outputDir = "../app"
-    val url = "jdbc:mysql://127.0.0.1/test"
+    val url = "jdbc:mysql://127.0.0.1/thulcandra"
     val username = "root"
     val password = ""
     val jdbcDriver = "com.mysql.jdbc.Driver"
